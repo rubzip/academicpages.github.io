@@ -13,17 +13,28 @@ Education
 ======
 * Ph.D in Computer Science, University of Santiago de Compostela, 2025 - 2029 (expected)
 * M.S. in Natural Language Processing, University of Basque Country, 2023 - 2025
-* B.S. in GitHub, University of Granada, 2017 - 2022
+* B.S. in Physics, University of Granada, 2017 - 2022
 
 Work experience
 ======
 * (03.2025 - Now) - Research Assistant
   * University of Santiago de Compostela
 
-* (07.2024 - 02.2025) - Research Assistant
-  * GitHub University
+* (07.2024 - 02.2025) - Master Thesis Student
+  * Huawei
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
+
+* (07.2024 - 02.2025) - Data Scientist
+  * Huawei
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+
+* (07.2024 - 02.2025) - Trainee Data Engineer
+  * Huawei
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+
 
 * Summer 2015: Research Assistant
   * GitHub University
