@@ -11,9 +11,12 @@ redirect_from:
 
 Education
 =========
-* Ph.D. in Computer Science (expected), University of Santiago de Compostela, 2025–2029  
-* M.S. in Natural Language Processing, University of the Basque Country, 2023–2025  
-* B.S. in Physics, University of Granada, 2017–2022  
+* **Ph.D. in Computer Science**
+*University of Santiago de Compostela* — 2025–2029  
+* **M.S. in Natural Language Processing**
+*University of the Basque Country* — 2023–2025  
+* **B.S. in Physics**
+*University of Granada* — 2017–2022  
 
 Work Experience
 ===============
@@ -25,7 +28,7 @@ Work Experience
   * Deployed deep learning models to optimize production processes  
 
 * **Thesis Intern Researcher (Audio & AI)**  
-  *Huawei Technologies R&D Center, Finland* — July 2024 – February 2025  
+  *Huawei Technologies R&D Center* — July 2024 – February 2025  
   * Built a low-latency acoustic scene classification model for real-world deployment  
   * Improved model efficiency 99% (from 1.56 MFLOPs to 860 MFLOPs) using knowledge distillation and MobileNet  
   * Master's Thesis graded with honors; paper in preparation  
@@ -51,7 +54,6 @@ Publications
   
 Extra-Curricular Activities
 ===========================
-
 * **Competitive Programming**  
   * 1st & 2nd place in UPV/EHU university contests (2023–2024)  
   * Participant in SWERC ICPC 2024 (Paris) 
