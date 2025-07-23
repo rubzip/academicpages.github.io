@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Rubén"
 title_separator          : "-"
 name                     : &name "Rubén"
 description              : &description "Researcher"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Rubén Gijón"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Full time researcher @ USC"
   location         : "Spain"
   employer         : "University of Santiago de Compostel"
   uri              : # URL
