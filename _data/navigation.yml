@@ -14,17 +14,14 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "Research"
-    url: /research/
+  - title: "Projects"
+    url: /portfolio/
 
   - title: "Publications"
     url: /publications/
 
   - title: "Teaching"
     url: /teaching/
-    
-  - title: "Projects"
-    url: /portfolio/
 
   - title: "Miscelanea"
     url: /year-archive/
