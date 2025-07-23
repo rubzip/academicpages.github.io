@@ -11,18 +11,16 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computer Science, University of Santiago de Compostela, 2025 - 2029 (expected)
+* M.S. in Natural Language Processing, University of Basque Country, 2023 - 2025
+* B.S. in GitHub, University of Granada, 2017 - 2022
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* (03.2025 - Now) - Research Assistant
+  * University of Santiago de Compostela
 
-* Fall 2015: Research Assistant
+* (07.2024 - 02.2025) - Research Assistant
   * GitHub University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
