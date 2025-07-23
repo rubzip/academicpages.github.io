@@ -10,64 +10,48 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
-* Ph.D in Computer Science, University of Santiago de Compostela, 2025 - 2029 (expected)
-* M.S. in Natural Language Processing, University of Basque Country, 2023 - 2025
-* B.S. in Physics, University of Granada, 2017 - 2022
+=========
+* Ph.D. in Computer Science (expected), University of Santiago de Compostela, 2025–2029  
+* M.S. in Natural Language Processing, University of the Basque Country, 2023–2025  
+* B.S. in Physics, University of Granada, 2017–2022  
 
-Work experience
-======
-* (03.2025 - Now) - Research Assistant
-  * University of Santiago de Compostela
+Work Experience
+===============
 
-* (07.2024 - 02.2025) - Master Thesis Student
-  * Huawei
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Researcher**  
+  *University of Santiago de Compostela* — March 2025 – Present  
+  * Technology-transfer project to the forestry industry  
+  * Designed state-of-the-art algorithms to improve industrial measurement and prediction  
+  * Deployed deep learning models to optimize production processes  
 
-* (07.2024 - 02.2025) - Data Scientist
-  * Huawei
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Thesis Intern Researcher (Audio & AI)**  
+  *Huawei Technologies R&D Center, Finland* — July 2024 – February 2025  
+  * Built a low-latency acoustic scene classification model for real-world deployment  
+  * Improved model efficiency 99% (from 1.56 MFLOPs to 860 MFLOPs) using knowledge distillation and MobileNet  
+  * Master's Thesis graded with honors; paper in preparation  
 
-* (07.2024 - 02.2025) - Trainee Data Engineer
-  * Huawei
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Data Scientist**  
+  *EY (Ernst & Young)* — December 2022 – September 2023  
+  * Built NLP classification model for product tax coding (83% accuracy)  
+  * Developed ELT pipeline with Snowflake, PySpark & SQL, improving data availability by 70%  
+  * Mentored interns and supported onboarding  
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming:** Python (4 yrs), SQL (4 yrs), C++ (2 yrs), ReactJS, Git  
+* **Languages:** Spanish (Native), English (Professional C1), French (Beginner) 
+* **Frameworks & Tools:** PyTorch, Azure Data Factory, Snowflake, dbt  
 
 Publications
 ======
+  Nothing yet.
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Extra-Curricular Activities
+===========================
+
+* **Competitive Programming**  
+  * 1st & 2nd place in UPV/EHU university contests (2023–2024)  
+  * Participant in SWERC ICPC 2024 (Paris) 
