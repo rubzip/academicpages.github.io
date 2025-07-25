@@ -13,7 +13,7 @@ tags:
 
 The ideal for generating images would be to define a probabilistic distribution containing all image content, and after that generate the image through a random process based on weighted probability as LLM does. But this is a huge task, and at the moment it is not possible.
 
-Diffusion models propose a process to achieve image generation thoug a similar method: to develop a neural network-based model that is able to gradually remove Gaussian noise from an image. So starting from any image generaeted through a Gaussian noise distribution $\mathcal{N}(0, 1)$, converge to image space after a finite number of $\mathcal{N}(0, 1)$ steps.
+Diffusion models propose a process to achieve image generation thoug a similar method: to develop a neural network-based model that is able to gradually remove Gaussian noise from an image. So starting from any image generaeted through a Gaussian noise distribution $$\mathcal{N}(0, 1)$$, converge to image space after a finite number of $\mathcal{N}(0, 1)$ steps.
 
 # Noising Process
 
