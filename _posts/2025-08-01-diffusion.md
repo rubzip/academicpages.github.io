@@ -306,3 +306,7 @@ $$
 $$
 
 **Observation**: For generating less biased models finally only $$\mu_\theta$$ depends on the model parameter model deviation is not considered.
+
+### Resources
+* [Denoising Diffusion Probabilistic Models (DDPM)](https://arxiv.org/abs/2006.11239) – The original paper by Ho et al. that introduced diffusion models for generative modeling.
+* [How Diffusion Models Work](https://www.youtube.com/watch?v=EhndHhIvWWw) – A visual and intuitive YouTube explanation of how diffusion models function.
