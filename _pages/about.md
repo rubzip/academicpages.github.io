@@ -1,3 +1,12 @@
+---
+permalink: /
+title: ""
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
 About Me
 ======
 I’m Rubén, a predoctoral researcher at the Universidade de Santiago de Compostela. I hold a Bachelor's degree in Physics, but my current focus lies in Machine Learning research. My passions include science, technology, and cinema.
