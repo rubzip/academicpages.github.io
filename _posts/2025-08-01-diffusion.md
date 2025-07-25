@@ -50,11 +50,11 @@ $$
 
 This phenomenon is called "variance exploitation". 
 
-![Noising process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](imgs/naive_diffusion_subplots.png)
+![Noising process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](diffusion/naive_diffusion_subplots.png)
 
 Noising process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.
 
-![Noising process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](imgs/naive_distribution_subplots.png)
+![Noising process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](diffusion/naive_distribution_subplots.png)
 
 Noising process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.
 
@@ -72,7 +72,7 @@ $$
 
 With $$\alpha_t = 1 - \beta_t, \space \space \space \bar{\alpha_t} = \prod_{s=1}^{t} \alpha_s$$.
 
-![Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](imgs/diffusion_subplots.png)
+![Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](diffusion/diffusion_subplots.png)
 
 Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.
 
@@ -82,7 +82,7 @@ $$
 \lim_{t \to \infty} x_t \sim \mathcal{N}(0, 1)
 $$
 
-![Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test. ](imgs/distribution_subplots.png)
+![Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test. ](diffusion/distribution_subplots.png)
 
 Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test. 
 
