@@ -207,7 +207,7 @@ $$
 $$
 
 $$
-= \mathcal{L}_T + \mathcal{L}_{t-1} + \mathcal{L}_0
+= \mathcal{L}_T + \sum_{t>1}^{T} \mathcal{L}_{t-1} + \mathcal{L}_0
 $$
 
 Where the new terms that depend on the original image are defined by Bayes theorem as:
