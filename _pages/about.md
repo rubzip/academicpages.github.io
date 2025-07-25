@@ -17,3 +17,4 @@ My research interests span efficient neural architectures, diffusion models, and
 
 Current Research
 ======
+I am currently working on the design of deep learning models for forestry industry.
