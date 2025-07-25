@@ -13,7 +13,7 @@ tags:
 
 The ideal for generating images would be to define a probabilistic distribution containing all image content, and after that generate the image through a random process based on weighted probability as LLM does. But this is a huge task, and at the moment it is not possible.
 
-Diffusion models propose a process to achieve image generation thoug a similar method: to develop a neural network-based model that is able to gradually remove Gaussian noise from an image. So starting from any image generaeted through a Gaussian noise distribution $$\mathcal{N}(0, 1)$$, converge to image space after a finite number of $\mathcal{N}(0, 1)$ steps.
+Diffusion models propose a process to achieve image generation thoug a similar method: to develop a neural network-based model that is able to gradually remove Gaussian noise from an image. So starting from any image generaeted through a Gaussian noise distribution $$\mathcal{N}(0, 1)$$, converge to image space after a finite number of $$\mathcal{N}(0, 1)$$ steps.
 
 # Noising Process
 
@@ -35,10 +35,10 @@ $$
 
 **Notation**: 
 
-- $x_0$ refers to the original image
-- $x_t$ image adter applying t-steps of noising
-- $\beta$ corresponds to the weight of noise
-- $\epsilon \sim \mathcal{N}(0, 1)$ is the noise added each step generated throug a normal distribution
+- $$x_0$$ refers to the original image
+- $$x_t$$ image adter applying t-steps of noising
+- $$\beta$$ corresponds to the weight of noise
+- $$\epsilon \sim \mathcal{N}(0, 1)$$ is the noise added each step generated throug a normal distribution
 
 ---
 
@@ -70,7 +70,7 @@ $$
 x_{t} = \sqrt{\bar{\alpha_t}} \cdot x_{0} + \sqrt{1 - \bar{\alpha_t}} \cdot \epsilon
 $$
 
-With  $\alpha_t = 1 - \beta_t, \space \space \space \bar{\alpha_t} = \prod_{s=1}^{t} \alpha_s$.
+With $$\alpha_t = 1 - \beta_t, \space \space \space \bar{\alpha_t} = \prod_{s=1}^{t} \alpha_s$$.
 
 ![Diffusion process example on an image over 500 steps. For testing if each distribution was likely a N(0, 1) distribution, it was applied Kolmogorov-Smirnov test.](imgs/diffusion_subplots.png)
 
@@ -96,7 +96,7 @@ $$
 q(x_{1}x_{2}...x_{T}|x_{0}) = q(x_{1:T}|x_{0}) = \prod_{t=1}^{T} q(x_{t}|x_{t-1})
 $$
 
-Where q is the probability density function of obtaining the value $x_t$ from the value $x_{t-1}$.
+Where q is the probability density function of obtaining the value $$x_t$$ from the value $$x_{t-1}$$.
 
 $$
 q(x_t \mid x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} \cdot x_{t-1}, \beta_t I)
@@ -106,7 +106,7 @@ $$
 
 **Notation:**
 
-$\mathcal{N}(x, \mu, \sigma)$ refers to the density probability function of normal distribution having the value x. To obtain the probability it must be integrated over the entire image space.
+$$\mathcal{N}(x, \mu, \sigma)$$ refers to the density probability function of normal distribution having the value x. To obtain the probability it must be integrated over the entire image space.
 
 $$
 Q(x_{1:T}|x_{0}) = \int \prod_{t=1}^{T} q(x_{t}|x_{t-1}) dx_{1:T}
@@ -116,7 +116,7 @@ $$
 
 # Denoising Process
 
-The *inverse process* is defined as the denoising process that converts a denoised image $x_T$ into a functional image. The whole process can be defined as a Markov chain:
+The *inverse process* is defined as the denoising process that converts a denoised image $$x_T$$ into a functional image. The whole process can be defined as a Markov chain:
 
 $$
 p_{\theta}(x_{0:T}) = p_{\theta}(x_{T}) \prod_{t=1}^{T}p_{\theta}(x_{t-1}|x_{t})
@@ -132,11 +132,11 @@ $$
 
 **Notation:**
 
-$\theta$ refers to the parameters of the neural network. If any element contains $\theta$ it means that it was calculated through NN and its parameters.
+$$\theta$$ refers to the parameters of the neural network. If any element contains $$\theta$$ it means that it was calculated through NN and its parameters.
 
 ---
 
-By definition $p_\theta$  and $q$ are inverse processes of themselves. It can be shown that the inverse process of a Gaussian is a Gaussian (reference to demonstration) so:
+By definition $$p_\theta$$  and $$q$$ are inverse processes of themselves. It can be shown that the inverse process of a Gaussian is a Gaussian (reference to demonstration) so:
 
 $$
 p_{\theta}(x_{t-1}|x_{t}) = \mathcal{N}(x_{t-1}, \mu_{\theta}(x_{t}, t), \sigma_{\theta}(x_{t}, t))
@@ -150,7 +150,7 @@ $$
 \mathcal{L}= \mathbb{E}[-\log p_\theta (x_0)]
 $$
 
-With $\mathbb{E}$ referred as the mean value over all the examples and $p_\theta(x_0)$ could be obtained by integrating:
+With $$\mathbb{E}$$ referred as the mean value over all the examples and $$p_\theta(x_0)$$ could be obtained by integrating:
 
 $$
 p_\theta(x_0) = \int p_\theta(x_{0:T}) dx_{1:T}
@@ -275,7 +275,7 @@ $$
 \mathcal{L}_T = D_{\text{KL}}(q(x_T \mid x_0) \mid\mid p_\theta(x_T))
 $$
 
-As $x_T$ is generated thoug a normal standard distribution and no apportation of NN weights to the computation of this loss and we consider as hyperparameters $\beta_t$ in terms of model optimizaation we consider $\mathcal{L}_T$ as  a **constant loss function in terms of $\theta$**.
+As $$x_T$$ is generated thoug a normal standard distribution and no apportation of NN weights to the computation of this loss and we consider as hyperparameters $$\beta_t$$ in terms of model optimizaation we consider $$\mathcal{L}_T$$ as  a **constant loss function in terms of $$\theta$$**.
 
 ### Noising process contribution
 
@@ -293,9 +293,9 @@ $$
 x \rightarrow [x - \frac{1}{255}, x + \frac{1}{255}]
 $$
 
-This transformation fully transforms discrete pixel values into continous space. For completion into the real space, we consider in limits intervals: $(+\infty, x + \frac{1}{255}]$ and $[x - \frac{1}{255}, +\infty)$.
+This transformation fully transforms discrete pixel values into continous space. For completion into the real space, we consider in limits intervals: $$(+\infty, x + \frac{1}{255}]$$ and $$[x - \frac{1}{255}, +\infty)$$.
 
-So the result of conditioned probability would be the integral over each pixel (and channel) $D$:
+So the result of conditioned probability would be the integral over each pixel (and channel) $$D$$:
 
 $$
 p_\theta (x_0 \mid x_1) = \prod_{d=1}^{D}\int_{\delta_-(x_0^d)}^{\delta_-(x_0^d)} \mathcal{N} (x; \mu_\theta(x_1, 1), \sigma_{1}^{2} I) dx
@@ -305,4 +305,4 @@ $$
 \delta_+(x) = \begin{cases}x + \frac{1}{255} & \text{if } x < 1 \\+\infty & \text{if } x = 1\end{cases}, \quad \delta_-(x) = \begin{cases}x - \frac{1}{255} & \text{if } x > -1 \\-\infty & \text{if } x = -1\end{cases}
 $$
 
-**Observation**: For generating less biased models finally only $\mu_\theta$ depends on the model parameter model deviation is not considered.
+**Observation**: For generating less biased models finally only $$\mu_\theta$$ depends on the model parameter model deviation is not considered.
