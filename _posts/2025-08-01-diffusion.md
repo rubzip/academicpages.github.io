@@ -284,6 +284,7 @@ $$
 $$
 
 As working with normal distributions is easier, it is considered that both distributions are gaussians:
+
 $$
 q(x_{t-1}|x_{t},x_0) = \mathcal{N}(\mu_\theta, \sigma_\theta)
 $$
@@ -292,12 +293,11 @@ $$
 p_{\theta}(x_{t-1}|x_{t}) = \mathcal{N}(\tilde{\mu_t}, \tilde{\beta_t})
 $$
 
+Now divergence results as simple as (considering $$\sigma_\theta$$ constant for ovidding overfitting):
+
 $$
 \mathcal{L}_{t-1} = D_{\text{KL}}\left( \mathcal{N}(\mu_\theta, \sigma^2) \,\|\, \mathcal{N}(\tilde{\mu}_t, \sigma^2) \right) = \frac{1}{2\sigma^2} \left\| \tilde{\mu}_t - \mu_\theta \right\|^2
 $$
-
-Now divergence results as simple as (considering $$\sigma_\theta$$ constant for ovidding overfitting):
-
 
 ### Denoised image contribution
 
@@ -322,11 +322,17 @@ $$
 **Observation**: For generating less biased models finally only $$\mu_\theta$$ depends on the model parameter model deviation is not considered.
 
 ## Simplified loss function
+As we previously said, $$\mathcal{L}_T$$ is not dependant on $$\theta$$. As the amount of steps is in order of 500, we are not considering anymore $$\mathcal{L}_0$$.
+
+$$
+\mathcal{L} \approx \sum_{t=1}^{T} \mathcal{L}_{t-1} =  \mathbb{E}_{q,t} \left [ \frac{\beta_{t}^{2}} {2 \sigma_t^2 \alpha_t (1 - \bar{\alpha_t})} \left\| \epsilon  - \epsilon _\theta (x_t, t) \right\|^{2} \right ]
+$$
+
 
 ## Training loop
 
 ## Generation loop
 
-### Resources
+## Resources
 * [Denoising Diffusion Probabilistic Models (DDPM)](https://arxiv.org/abs/2006.11239) – The original paper by Ho et al. that introduced diffusion models for generative modeling.
 * [How Diffusion Models Work](https://www.youtube.com/watch?v=EhndHhIvWWw) – A visual and intuitive YouTube explanation of how diffusion models function.
