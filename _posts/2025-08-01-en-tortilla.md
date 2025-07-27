@@ -8,7 +8,7 @@ tags:
   - food
 ---
 
-*This post was translated using ChatGPT. To see the original, one click [here](posts/2025/08/tortilla-patatas/).*
+*This post was translated using ChatGPT. To see the original, one click [here](/posts/2025/08/tortilla-patatas/).*
 
 Como buen español, uno de mis platos favoritos es la [tortilla de patatas](https://es.wikipedia.org/wiki/Tortilla_de_patatas). Es curioso que un plato con tan pocos ingredientes tenga tantas versiones y genere tanta discusión: si lleva cebolla o no, el punto de cocción, si se cortan las patatas en cubitos o en láminas... Durante toda mi vida he probado muchas versiones de este plato y, en los últimos años, he estado experimentando cómo cocinarlo. Todas las versiones están ricas, pero hoy quiero compartir la que, para mí, es la mejor.
 
