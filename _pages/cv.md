@@ -11,12 +11,11 @@ redirect_from:
 
 Education
 =========
+
 * **Ph.D. in Computer Science**
   *University of Santiago de Compostela* — 2025–2029
-
 * **M.S. in Natural Language Processing**
   *University of the Basque Country* — 2023–2025  
-
 * **B.S. in Physics**
   *University of Granada* — 2017–2022  
 
