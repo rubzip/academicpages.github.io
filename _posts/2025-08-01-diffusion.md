@@ -287,9 +287,16 @@ As working with normal distributions is easier, it is considered that both distr
 $$
 q(x_{t-1}|x_{t},x_0) = \mathcal{N}(\mu_\theta, \sigma_\theta)
 $$
+
 $$
-p_{\theta}(x_{t-1}|x_{t}) = \mathcal{N}(\tilde{\mu_t}, \tilde{\sigma_t})
+p_{\theta}(x_{t-1}|x_{t}) = \mathcal{N}(\tilde{\mu_t}, \tilde{\beta_t})
 $$
+
+$$
+\mathcal{L}_{t-1} = D_{\text{KL}}\left( \mathcal{N}(\mu_\theta, \sigma^2) \,\|\, \mathcal{N}(\tilde{\mu}_t, \sigma^2) \right) = \frac{1}{2\sigma^2} \left\| \tilde{\mu}_t - \mu_\theta \right\|^2
+$$
+
+Now divergence results as simple as (considering $$\sigma_\theta$$ constant for ovidding overfitting):
 
 
 ### Denoised image contribution
