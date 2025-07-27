@@ -13,13 +13,11 @@ Education
 =========
 
 * **Ph.D. in Computer Science**
-  <p style="text-align: right;">University of Granada — 2017–2022</p>
-
+  * *University of Santiago de Compostela* — 2025–2029
 * **M.S. in Natural Language Processing**
-  <p style="text-align: right;">University of Granada — 2017–2022</p>
-
+  * *University of the Basque Country* — 2023–2025  
 * **B.S. in Physics**
-  <p style="text-align: right;">University of Granada — 2017–2022</p>
+  * *University of Granada* — 2017–2022  
 
 Work Experience
 ===============
