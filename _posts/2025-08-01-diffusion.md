@@ -283,7 +283,14 @@ $$
 \mathcal{L}_{t-1} = D_{\text{KL}}(q(x_{t-1}|x_{t},x_0)\mid\mid p_{\theta}(x_{t-1}|x_{t}))
 $$
 
-With the goal of avoiding to overfit the model it is considered 
+As working with normal distributions is easier, it is considered that both distributions are gaussians:
+$$
+q(x_{t-1}|x_{t},x_0) = \mathcal{N}(\mu_\theta, \sigma_\theta)
+$$
+$$
+p_{\theta}(x_{t-1}|x_{t}) = \mathcal{N}(\tilde{\mu_t}, \tilde{\sigma_t})
+$$
+
 
 ### Denoised image contribution
 

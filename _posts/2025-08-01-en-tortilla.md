@@ -1,7 +1,7 @@
 ---
-title: 'La tortilla de patatas perfecta (para mí)'
+title: 'The perfect tortilla de patatas'
 date: 2025-08-01
-permalink: /posts/2025/08/tortilla-patatas/
+permalink: /posts/2025/08/en-tortilla-patatas/
 tags:
   - cooking
   - tortilla
