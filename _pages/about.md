@@ -9,7 +9,7 @@ redirect_from:
 
 About Me
 ======
-I’m Rubén, a predoctoral researcher at the Universidade de Santiago de Compostela. I hold a Bachelor's degree in Physics, but my current focus lies in Machine Learning research. My passions include science, technology, and cinema.
+I’m Rubén, a predoctoral researcher at the Universidade de Santiago de Compostela. I hold a Bachelor's degree in Physics, but my current focus lies in Machine Learning research. I mostly enjoy science, technology, and cinema.
 
 Research Interests
 ======

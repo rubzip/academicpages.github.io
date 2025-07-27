@@ -321,13 +321,14 @@ $$
 
 **Observation**: For generating less biased models finally only $$\mu_\theta$$ depends on the model parameter model deviation is not considered.
 
-## Simplified loss function
+# Simplified loss function
 As we previously said, $$\mathcal{L}_T$$ is not dependant on $$\theta$$. As the amount of steps is in order of 500, we are not considering anymore $$\mathcal{L}_0$$.
 
 $$
 \mathcal{L} \approx \sum_{t=1}^{T} \mathcal{L}_{t-1} =  \mathbb{E}_{q,t} \left [ \frac{\beta_{t}^{2}} {2 \sigma_t^2 \alpha_t (1 - \bar{\alpha_t})} \left\| \epsilon  - \epsilon _\theta (x_t, t) \right\|^{2} \right ]
 $$
 
+The loss function is trained to be able to predict the noise that was added to an image at any step.
 
 ## Training loop
 
